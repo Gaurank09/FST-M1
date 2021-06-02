@@ -1,0 +1,7 @@
+INSERT ALL
+    INTO salesman VALUES(10001, 'Jatin', 'Delhi', 15);
+    INTO salesman VALUES(10002, 'Arun', 'Noida', 10)
+    INTO salesman VALUES(10003, 'Jagdeep', 'Faridabad', 10)
+    INTO salesman VALUES(10004, 'Abdul', 'Gurgaon', 10)
+    INTO salesman VALUES(10005, 'Qazi', 'Ghaziabad', 12)
+SELECT 1 FROM DUAL;
