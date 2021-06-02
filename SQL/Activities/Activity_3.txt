@@ -1,0 +1,6 @@
+-- Show data from the salesman_id and city columns
+SELECT salesman_id, salesman_city FROM salesman;
+
+SELECT * FROM salesman WHERE salesman_city='Delhi';
+
+SELECT salesman_id, commission FROM salesman WHERE salesman_name='Jagdeep';
