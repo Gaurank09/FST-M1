@@ -1,5 +1,7 @@
 package Activities;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,15 +17,8 @@ public class Activity7 {
 		
 		driver.findElement(By.id("menu-item-1508")).click();
 		
-		
-		String text1 = driver.findElement(By.xpath("//*[@id=\\\"post-69\\\"]/div[2]/h3")).getText();
-		System.out.println("Course 1: " + text1);
-	
-		String text2 = driver.findElement(By.xpath("//*[@id=\"post-71\"]/div[2]/h3")).getText();
-		System.out.println("Course 1: " + text2);
-		
-		String text3 = driver.findElement(By.xpath("//*[@id=\"post-24042\"]/div[2]/h3")).getText();
-		System.out.println("Course 1: " + text3);
+		 List<WebElement> cols=driver.findElements(By.xpath("//div[@class='caption']/h3"));
+		 System.out.println("Number of Courses on the page: "+ cols.size());
 		
 		driver.close();
 		Browser.close();
